@@ -16,6 +16,6 @@
 		<mvc:jsp prefix="/WEB-INF/views/" />
 	</mvc:view-resolvers>
 	
-	
+	<bean class="controller.WelcomeController"></bean>
 
 </beans>

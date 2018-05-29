@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	HELLO WORLD 이게 웰컴 JSP
+	<h1>HELLO WORLD 이게 웰컴 JSP</h1>
+	<br>
+	<audio controls> <source src="test.mp3" type="audio/mpeg"></audio>
 </body>
 </html>
