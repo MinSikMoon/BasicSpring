@@ -14,8 +14,8 @@
 		<init-param><!-- dispatcher는 getInitParam을 써서 내용을 읽어들일 수 있다. -->
 			<param-name>contextConfigLocation</param-name>
 			<param-value><!-- 이 두개의 내용이 디스패쳐내의 ctx 초기화에 읽혀들어감. -->
-				classpath:spring-mvc.xml
-				classpath:spring-controller.xml
+				/WEB-INF/resources/spring-mvc.xml
+				/WEB-INF/resources/spring-controller.xml
 			</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
