@@ -10,11 +10,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <!-- style -->
 <style>
 html, body, .container {
@@ -103,29 +103,40 @@ html, body, .container {
 .nav-div {
 	margin-left: 20px;
 }
+
+.tmiddle {
+	text-align: center;
+}
 </style>
 </head>
 <body>
-<div class="form-group top-bar">
-		<span class="nav-div"> <span class="vmiddle white-text">A : </span> <textarea id="roomKey" class="vmiddle" readonly rows="1"
-				cols="15">블라블라 readonly</textarea>
-		</span> <span class="nav-div"> <span class="vmiddle white-text">B
-				: </span> <textarea id="name" class="vmiddle" rows="1" cols="15" placeholder="입력하셈"></textarea>
-		</span>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-10 col-md-10 chat-basic chat-python">
-				<h3 class="group-title">결과화면</h3>
+	<header>
+		<div class="form-group top-bar">
+			<span class="nav-div"> <span class="vmiddle white-text">A
+					: </span> <textarea id="roomKey" class="vmiddle" readonly rows="1"
+					cols="20">readonly</textarea>
+			</span> <span class="nav-div"> <span class="vmiddle white-text">B
+					: </span> <textarea id="name" class="vmiddle" rows="1" cols="15"
+					placeholder="입력하셈"></textarea>
+			</span>
+		</div>
+	</header>
+	<main role="main" class="container-fluid">
+	<div class="row">
+		<div class="col-lg-10 col-md-10 ">
+			<h3 class="tmiddle">결과화면</h3>
 
-			</div>
+		</div>
 
-			<div class="col-lg-2 col-md-2 chat-basic chat">
-				<h3 class="group-title">api들</h3>
+		<div class="col-lg-2 col-md-2 chat-basic chat">
+			<h3 class="group-title">api들</h3>
+			<c:forEach items="${buttonList}" var="bt">
+			<button type="button" class="btn btn-primary btn-lg btn-block" id = "${bt.id}">${bt.value}</button>
+			</c:forEach>
 
-			</div>
 		</div>
 	</div>
+	</main>
 
 </body>
 </html>
