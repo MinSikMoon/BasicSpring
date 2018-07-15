@@ -18,7 +18,7 @@ public class BasicDao {
 	public List<String> selectAllTest(){
 		List<String> result = null;
 		try{
-			result = (List<String>)jdbcTemplate.queryForList("[your query]", String.class);
+			result = (List<String>)jdbcTemplate.queryForList("select content from board", String.class);
 		}catch(Exception e){
 			e.printStackTrace();
 		}

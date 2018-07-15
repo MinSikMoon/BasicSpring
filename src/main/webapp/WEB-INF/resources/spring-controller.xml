@@ -17,6 +17,7 @@
 	<context:annotation-config/>
 	
 	<bean class="controller.WelcomeController"></bean>
+	<bean class="controller.MybatisController"></bean>
 	
 	
 </beans>

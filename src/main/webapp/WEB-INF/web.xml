@@ -17,6 +17,7 @@
 				/WEB-INF/resources/spring-mvc.xml
 				/WEB-INF/resources/spring-controller.xml
 				/WEB-INF/resources/spring-db.xml
+				/WEB-INF/resources/spring-mybatis.xml
 			</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>

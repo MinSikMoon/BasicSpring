@@ -11,8 +11,8 @@
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
 		destroy-method="close">
 		<property name="driverClass" value="org.postgresql.Driver" />
-		<property name="jdbcUrl" value="jdbc:postgresql://[ip]:5432/[dbname]" />
-		<property name="user" value="[userid]" />
+		<property name="jdbcUrl" value="jdbc:postgresql://[ip]:5432/[db]" />
+		<property name="user" value="[id]" />
 		<property name="password" value="[password]" />
 		<property name="maxPoolSize" value="100" />
 		<property name="maxIdleTime" value="600" />
