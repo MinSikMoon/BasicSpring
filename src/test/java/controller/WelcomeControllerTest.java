@@ -1,5 +1,6 @@
 package controller;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
@@ -33,7 +34,8 @@ public class WelcomeControllerTest {
 	@Test
 	public void test_1() {
 		try {
-			System.out.println(mockMvc.perform(MockMvcRequestBuilders.get("/welcome")).andReturn().getModelAndView().getViewName());
+			//System.out.println(mockMvc.perform(MockMvcRequestBuilders.get("/welcome")).andReturn().getModelAndView().getViewName());
+			assertEquals("welcome", this.mockMvc.perform(MockMvcRequestBuilders.get("/welcome")).andReturn().getModelAndView().getViewName()); 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
